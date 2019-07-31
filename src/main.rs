@@ -12,7 +12,7 @@ fn main() {
     let mut sorted_pixels = unsorted_pixels.clone();
 
     // Sorting by red color in acending order
-    unsorted_pixels.sort_by(|a, b| a.2[0].cmp(&b.2[0]));
+    unsorted_pixels.sort_by(|a, b| a.2[1].cmp(&b.2[1]));
 
     for i in 0..unsorted_pixels.len() {
         sorted_pixels[i].2 = unsorted_pixels[i].2;
